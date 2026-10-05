@@ -1,0 +1,6 @@
+{
+  "name": "IGCSE 0580 Curved Graphs Studio",
+  "description": "Interactive Cambridge IGCSE Mathematics 0580 curved graphs explorer, digital practice workspace, and exam revision laboratory for Quadratic, Cubic, and Hyperbola functions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

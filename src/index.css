@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0A1128;
+    color: #F1F5F9;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A1128;
+}
+::-webkit-scrollbar-thumb {
+  background: #23324C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4CC9F0;
+}
+
+/* Print styles for Download as PDF */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    color: #0F172A !important;
+    font-size: 11pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-card {
+    background-color: #FFFFFF !important;
+    border: 1px solid #CBD5E1 !important;
+    color: #0F172A !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    margin-bottom: 1.5rem;
+    padding: 1rem !important;
+  }
+
+  .print-text-dark {
+    color: #0F172A !important;
+  }
+
+  .print-text-muted {
+    color: #475569 !important;
+  }
+
+  .print-border {
+    border-color: #CBD5E1 !important;
+  }
+
+  input, textarea {
+    border-color: #94A3B8 !important;
+    background-color: #F8FAFC !important;
+    color: #0F172A !important;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
